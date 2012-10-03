@@ -1,0 +1,15 @@
+{ "authorization": {
+    "sudo": {
+      "users": [
+        "jenkins"
+      ],
+      "passwordless": true
+    }
+  },
+  "run_list": [
+    "recipe[build-essential]",
+    "recipe[git]",
+    "recipe[jenkins]",
+    "recipe[sudo]"
+  ] 
+}
